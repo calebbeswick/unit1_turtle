@@ -1,5 +1,6 @@
 import turtle
 
+
 def draw_house(size, roof_color, house_color):
     turtle.color(roof_color)
     turtle.begin_fill()
@@ -9,7 +10,6 @@ def draw_house(size, roof_color, house_color):
 
     turtle.end_fill()
 
-
     turtle.color(house_color)
     turtle.begin_fill()
     for y in range(4):
@@ -17,6 +17,20 @@ def draw_house(size, roof_color, house_color):
         turtle.right(90)
     turtle.end_fill()
 
-draw_house(200, "blue", "red")
+
+def draw_multiple_houses(x_coordinate, y_coordinate):
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.goto(x_coordinate, y_coordinate)
+    turtle.pendown()
+    draw_house(size, roof_color, house_color)
+
+x_coordinate = int(input("Enter x coordinate"))
+y_coordinate = int(input("Enter y coordinate"))
+size = int(input("Enter house size"))
+house_color = input("Enter House Color")
+
+
+draw_multiple_houses(x_coordinate, y_coordinate)
 
 turtle.exitonclick()
