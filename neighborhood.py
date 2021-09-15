@@ -28,6 +28,7 @@ def draw_multiple_houses(x_coordinate, y_coordinate):
 x_coordinate = int(input("Enter x coordinate"))
 y_coordinate = int(input("Enter y coordinate"))
 size = int(input("Enter house size"))
+roof_color = input("Enter Roof Color")
 house_color = input("Enter House Color")
 
 
